@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUNKER - Venta de Entradas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BUNKR ESQUINA</h1>
+        <header></header>
+        <nav>
+            <ul>
+                <li><a href="#eventos">Eventos</a></li>
+                <header></header>
+                <li><a href="#entradas">Entradas</a></li>
+                <header></header>
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="eventos">
+        <h2>Próximos Eventos</h2>
+        <div class="event">
+            <img src="halloween.jpeg" alt="Fiesta de Disfraces" class="event-img">
+            <h3>Fiesta de Disfraces "Halloween"</h3>
+            <p>Fecha: 1 de Noviembre</p>
+            <p>Precio: $3000</p>
+            <button onclick="comprarEntrada('Fiesta Disfraces Halloween', 3000)">Comprar Entrada</button>
+        </div>
+        <div class="event">
+            <img src="retro.jpeg" alt="Fiesta Retro" class="event-img">
+            <h3>Noche de Retro</h3>
+            <p>Fecha: 22 de Noviembre</p>
+            <p>Precio: $3500</p>
+            <button onclick="comprarEntrada('Noche de Retro', 3500)">Comprar Entrada</button>
+        </div>
+        <div class="event">
+            <img src="black pary.jpeg" alt="Fiesta black" class="event-img">
+            <h3>Fiesta Black</h3>
+            <p>Fecha: 29 de Noviembre</p>
+            <p>Precio: $2500</p>
+            <button onclick="comprarEntrada('Fiesta Black', 2500)">Comprar Entrada</button>
+        </div>
+        <div class="event">
+            <img src="despe.jpeg" alt="Fiesta de Despedida" class="event-img">
+            <h3>Fiesta Despedida</h3>
+            <p>Fecha: 18 de Diciembre</p>
+            <p>Precio: $2500</p>
+            <button onclick="comprarEntrada('Fiesta Despedida', 2500)">Comprar Entrada</button>
+    </section>
+
+    <section id="entradas">
+        <h2>Entradas en Carrito</h2>
+        <ul id="carrito"></ul>
+        <p id="total"></p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <header></header>
+        <p>Email: bnkeresquina13@gmail.com</p>
+        <header></header>
+        <p>Teléfono: +549377735098/p>
+        <header></header>
+        <p>Direccion: Lamela 1232</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
